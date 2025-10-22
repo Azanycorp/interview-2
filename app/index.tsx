@@ -7,12 +7,12 @@ import { COLORS } from '../constants/Colors';
 const SplashScreen = () => (
   <View style={styles.splashContainer}>
     <Image 
-      source={require('../assets/images/azany_logo.png')} // Update path to your logo
+      source={require('../assets/images/azany_logo.png')} 
       style={styles.logo}
       resizeMode="contain"
     />
     <Image 
-      source={require('../assets/images/splash-bgitem.png')} // Update path to your bottom decoration
+      source={require('../assets/images/splash-bgitem.png')} 
       style={styles.bottomDecoration}
       resizeMode="contain"
     />

@@ -12,7 +12,7 @@ const LoginScreen = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [email, setEmail] = useState('johndoe@email.com');
   const handleLogin = () => {
-    // Replace with actual login logic
+  
     router.replace('/(tabs)/marketplace');
   };
 

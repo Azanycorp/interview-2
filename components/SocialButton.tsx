@@ -5,7 +5,7 @@ import Svg, { Path } from 'react-native-svg';
 
 interface SocialButtonProps {
   provider: 'google' | 'apple';
-  transparent?: boolean; // ✅ new optional prop
+  transparent?: boolean;
 }
 
 const GoogleIcon = () => (
@@ -40,7 +40,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ provider, transparent }) =>
     <TouchableOpacity
       style={[
         styles.button,
-        transparent && styles.transparentButton, // ✅ apply conditional transparent style
+        transparent && styles.transparentButton,
       ]}
     >
       {provider === 'google' ? <GoogleIcon /> : <AppleIcon />}
