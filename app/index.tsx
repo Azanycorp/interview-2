@@ -1,23 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Onboarding from '../components/Onboarding';
 import { COLORS } from '../constants/Colors';
 
-const SplashScreen = () => (
-  <View style={styles.splashContainer}>
-    <Image 
-      source={require('../assets/images/azany_logo.png')} 
-      style={styles.logo}
-      resizeMode="contain"
-    />
-    <Image 
-      source={require('../assets/images/splash-bgitem.png')} 
-      style={styles.bottomDecoration}
-      resizeMode="contain"
-    />
-  </View>
-);
+const SplashScreen = () => {
+  const insets = useSafeAreaInsets();
+
+  return (
+    <View style={styles.splashContainer}>
+      <Image
+        source={require('../assets/images/azany_logo.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      />
+      <Image
+        source={require('../assets/images/splash-bgitem.png')}
+        style={[
+          styles.bottomDecoration,
+          { bottom: insets.bottom > 0 ? insets.bottom : 10 }, // adds inset for navigation bar
+        ]}
+        resizeMode="contain"
+      />
+    </View>
+  );
+};
 
 const AppEntry: React.FC = () => {
   const [appState, setAppState] = useState<'loading' | 'onboarding'>('loading');
@@ -55,7 +63,6 @@ const styles = StyleSheet.create({
   },
   bottomDecoration: {
     position: 'absolute',
-    bottom: 0,
     left: -10,
     width: 150,
     height: 150,
