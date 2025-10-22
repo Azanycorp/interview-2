@@ -99,10 +99,11 @@ const styles = StyleSheet.create({
     flex: 1, 
     justifyContent: 'space-between', 
     padding: 20,
+
     paddingBottom: 32
   },
   topContainer: {
-    paddingTop: 8
+    paddingTop: 16
   },
   logoWrapper: { 
     backgroundColor: COLORS.white,

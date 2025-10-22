@@ -49,12 +49,13 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ label, ...props }) => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
+    marginBottom:8,
   },
   label: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: COLORS.text,
-    marginBottom: 4,
+    fontSize: 12, 
+    fontWeight: '500', 
+    color: '#787E88', 
+    marginBottom: 8 
   },
   input: {
     borderWidth: 1,

@@ -82,6 +82,7 @@ const SignUpScreen = () => {
 const styles = StyleSheet.create({
   safeArea: { 
     flex: 1, 
+    paddingTop:16,
     backgroundColor: COLORS.white 
   },
   container: { 
@@ -90,30 +91,30 @@ const styles = StyleSheet.create({
     paddingTop: 16
   },
   logoContainer: { 
-    alignSelf: 'flex-start', 
+   alignSelf: 'flex-start', 
     borderWidth: 1, 
     borderColor: '#E0E0E0', 
     borderRadius: 20, 
     paddingHorizontal: 12, 
     paddingVertical: 6, 
-    marginBottom: 32 
+    marginBottom: 24 
   },
   logo: {
     width: 60,
     height: 20
   },
   subtitle: { 
-    color: '#666666', 
+     color: '#666666', 
     fontSize: 12, 
     fontWeight: '400',
     letterSpacing: 0.5,
     marginBottom: 4 
   },
   title: { 
-    fontSize: 26, 
-    fontWeight: '700', 
-    color: '#333333', 
-    marginBottom: 32,
+    fontSize: 25, 
+    fontWeight: '500', 
+    color: '#545454', 
+    marginBottom: 48,
     letterSpacing: -0.3
   },
   form: { 
@@ -124,19 +125,19 @@ const styles = StyleSheet.create({
     marginBottom: 16
   },
   label: { 
-    fontSize: 14, 
+   fontSize: 12, 
     fontWeight: '500', 
-    color: '#333333', 
+    color: '#787E88', 
     marginBottom: 8 
   },
   input: { 
-    borderWidth: 1, 
+   borderWidth: 1, 
     borderColor: '#E0E0E0', 
     borderRadius: 8, 
     paddingHorizontal: 16, 
     paddingVertical: 14, 
-    fontSize: 15,
-    color: '#333333',
+    fontSize: 14,
+    color: '#667085',
     backgroundColor: '#FAFAFA'
   },
   hintText: { 

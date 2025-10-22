@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   bottomDecoration: {
     position: 'absolute',
     bottom: 0,
-    left: 0,
+    left: -10,
     width: 150,
     height: 150,
   },
