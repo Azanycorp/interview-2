@@ -72,12 +72,13 @@ const AdsCarousel = () => {
 const styles = StyleSheet.create({
   container: {
     marginVertical: 12,
+    padding:16,
   },
   image: {
     width,
     height: width * 0.45,
     resizeMode: "cover",
-    borderRadius: 16,
+    borderRadius: 8,
   },
   pagination: {
     flexDirection: "row",

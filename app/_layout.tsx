@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Stack, useRouter } from 'expo-router';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ModalProvider, useModal } from '../context/ModalContext';
 import VerifyCodeModal from '../components/VerifyCodeModal';
 
@@ -31,9 +31,11 @@ const AppContent: React.FC = () => {
 
 const RootLayout: React.FC = () => {
   return (
-    <ModalProvider>
-      <AppContent />
-    </ModalProvider>
+    <SafeAreaProvider>
+      <ModalProvider>
+        <AppContent />
+      </ModalProvider>
+    </SafeAreaProvider>
   );
 };
 
